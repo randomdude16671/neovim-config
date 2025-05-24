@@ -4,3 +4,4 @@ vim.cmd.so "~/.config/nvim/lua/ghost/core/keymaps.lua" -- yea it wasn't working 
 require("lazy").setup({
 	{ import = "ghost.plugins" },
 }, require("ghost.plugins.config.lazy"))
+

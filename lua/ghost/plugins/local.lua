@@ -5,12 +5,6 @@ local local_plugins = {
 		dir = "~/Project/manim.nvim",
 		opts = {},
 	},
-	{
-		"todo",
-		dir = "~/Project/todo",
-		cmd = "Td",
-		opts = {},
-	},
 }
 
 return local_plugins

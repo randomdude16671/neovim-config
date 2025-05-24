@@ -2,10 +2,13 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		event = { "BufRead", "BufNewFile" },
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter-textobjects"
+    }, 
 		name = "treesitter",
 		config = function()
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = { "lua", "nix", "regex", "vim", "vimdoc", "c", "ninja", "bash", "go", "markdown" },
+				ensure_installed = { "lua", "nix", "regex", "vim", "vimdoc", "c", "bash", "go", "markdown" },
 				highlight = {
 					enable = true,
 					additional_vim_regex_highlighting = false,

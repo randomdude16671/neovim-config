@@ -1,63 +1,47 @@
-local opt = vim.opt
-local o = vim.o
-local g = vim.g
-local wo = vim.wo
-
-o.cursorline = true 
-o.cursorlineopt = "number"
-
-g.netrw_banner = 0 
-g.netrw_keepdir = 0
-g.netrw_confirm = 0 
-
-g.mapleader = " "
-g.maplocalleader = " "
-
-opt.guicursor = ""
-opt.incsearch = true
-
-o.expandtab = true
-o.shiftwidth = 4
-o.smartindent = true
-o.tabstop = 4
-o.softtabstop = 4
-
-opt.fillchars = { eob = " " }
-o.ignorecase = true
-o.smartcase = true
-o.mouse = "a"
-
-o.number = true
-o.relativenumber = true
-o.numberwidth = 1
-o.ruler = true 
-
-opt.shortmess:append("sI")
-
-o.signcolumn = "yes"
-o.splitbelow = true
-o.splitright = true
-o.timeoutlen = 400
-o.undofile = true
-
-o.updatetime = 250
-
-opt.whichwrap:append("<>[]hl")
-
-g.loaded_node_provider = 0
-g.loaded_python3_provider = 0
-g.loaded_perl_provider = 0
-g.loaded_ruby_provider = 0
-o.laststatus = 3
-o.showmode = true
-
-opt.updatetime = 50
-
-opt.termguicolors = true
-opt.smartindent = true
-
-opt.hlsearch = false
-opt.incsearch = true
-
-opt.wrap = false
-opt.scrolloff = 10
+vim.o.cursorline = true 
+vim.o.cursorlineopt = "number"
+vim.g.netrw_banner = 0 
+vim.g.netrw_keepdir = 0
+vim.g.netrw_confirm = 0 
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+vim.opt.guicursor = ""
+vim.o.expandtab = true
+vim.o.shiftwidth = 4
+vim.o.smartindent = true
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.opt.fillchars = { eob = " " }
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.mouse = "a"
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.numberwidth = 1
+vim.o.ruler = true 
+vim.opt.shortmess:append("sI")
+vim.o.signcolumn = "yes"
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.timeoutlen = 400
+vim.o.undofile = true
+vim.opt.undodir = vim.fn.stdpath("cache") .. "/undo"
+vim.opt.whichwrap:append("<>[]hl")
+vim.g.loaded_node_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.o.laststatus = 3
+vim.o.showmode = true
+vim.opt.updatetime = 50
+vim.opt.termguicolors = true
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+vim.opt.wrap = false
+vim.opt.scrolloff = 10
+vim.opt.lazyredraw = true
+vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.swapfile = false 
+vim.opt.backup = false 
+vim.opt.list = true
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "·", space = "·" }
