@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, {"nvim-telescope/telescope-frecency.nvim"}},
+		dependencies = { "nvim-lua/plenary.nvim", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }},
 		cmd = "Telescope",
 		keys = {
 			{
@@ -56,7 +56,6 @@ return {
 				},
 			})
 			require("telescope").load_extension("fzf")
-      require("telescope").load_extension("frecency") 
 		end,
 	},
 }

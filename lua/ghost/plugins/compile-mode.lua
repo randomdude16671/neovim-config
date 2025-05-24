@@ -3,7 +3,6 @@ return {
   branch = "nightly",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    { "m00qek/baleia.nvim", tag = "v1.3.0" },
   },
   keys = {
     {
@@ -15,8 +14,7 @@ return {
   config = function()
     ---@type CompileModeOpts
     vim.g.compile_mode = {
-      baleia_setup = true, 
-      default_command = "", 
+      default_command = "", -- set the default command to nothing to make it even mode goated
     }
   end
 }
