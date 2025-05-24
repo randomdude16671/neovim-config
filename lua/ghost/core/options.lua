@@ -44,4 +44,4 @@ vim.opt.completeopt = { "menuone", "noselect" }
 vim.opt.swapfile = false 
 vim.opt.backup = false 
 vim.opt.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "·", space = "·" }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "·" }
