@@ -1,4 +1,5 @@
 {
+  "baleia.nvim": { "branch": "main", "commit": "fb3aff021b2b64ef820d0230d2c22ebfaf71bb6a" },
   "blink.cmp": { "branch": "main", "commit": "196711b89a97c953877d6c257c62f18920a970f3" },
   "catppuccin.nvim": { "branch": "main", "commit": "be1e5e6308bb9d016bf5c1565e0f1d5e46400d7a" },
   "compile-mode.nvim": { "branch": "nightly", "commit": "f43ba8bd0bf6c1a5c30f5849086811d9784a52d7" },
