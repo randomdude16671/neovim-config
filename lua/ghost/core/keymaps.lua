@@ -23,7 +23,6 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]]) -- pretty good one too.
 vim.keymap.set("n", "-", vim.cmd.Ex)
 vim.keymap.set("n", "q:", "<cmd>Telescope command_history<cr>", {noremap = true}) 
 vim.keymap.set("n", "q/", "<cmd>Telescope search_history<cr>", {noremap = true}) 

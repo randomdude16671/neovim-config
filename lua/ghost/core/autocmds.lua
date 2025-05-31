@@ -39,3 +39,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.cursorlineopt = "both"
 	end,
 })
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+  pattern = { "Taskfile", "*.mbuild" }, 
+  callback = function()
+    vim.bo.filetype = "mini-build"
+  end, 
+}) 
