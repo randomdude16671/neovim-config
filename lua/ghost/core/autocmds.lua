@@ -1,7 +1,7 @@
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
-		require("conform").format({ bufnr = args.buf })
+    vim.lsp.buf.format({ async = false }) -- format the current buffer according to lsp or none-ls
 	end,
 })
 
@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.bo.tabstop = 2
 		vim.bo.shiftwidth = 2
 		vim.bo.softtabstop = 2
-		vim.bo.expandtab = true
+		vim.bo.expandtab = false
 	end,
 })
 
