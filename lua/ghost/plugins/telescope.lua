@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }},
+		dependencies = { "nvim-lua/plenary.nvim", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" } },
 		cmd = "Telescope",
 		keys = {
 			{
@@ -40,14 +40,14 @@ return {
 					)
 				end,
 			},
-      { 
-        "<C-t>", 
-        function() 
-          require("telescope.builtin").treesitter(
-            require("telescope.themes").get_dropdown({ height = 10, previewer = false }) 
-          )
-        end
-      }
+			{
+				"<C-t>",
+				function()
+					require("telescope.builtin").treesitter(
+						require("telescope.themes").get_dropdown({ height = 10, previewer = false })
+					)
+				end,
+			},
 		},
 		config = function()
 			require("telescope").setup({

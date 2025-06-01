@@ -1,7 +1,7 @@
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
-    vim.lsp.buf.format({ async = false }) -- format the current buffer according to lsp or none-ls
+		vim.lsp.buf.format({ async = false }) -- format the current buffer according to lsp or none-ls
 	end,
 })
 
@@ -33,16 +33,16 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "netrw",
-  -- make it like normal netrw (it does matter) 
+	-- make it like normal netrw (it does matter)
 	callback = function()
 		vim.opt_local.cursorline = true
-    vim.opt_local.cursorlineopt = "both"
+		vim.opt_local.cursorlineopt = "both"
 	end,
 })
 
-vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
-  pattern = { "Taskfile", "*.mbuild" }, 
-  callback = function()
-    vim.bo.filetype = "mini-build"
-  end, 
-}) 
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+	pattern = { "Taskfile", "*.mbuild" },
+	callback = function()
+		vim.bo.filetype = "mini-build"
+	end,
+})

@@ -2,9 +2,9 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		event = { "BufRead", "BufNewFile" },
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter-textobjects"
-    }, 
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter-textobjects",
+		},
 		name = "treesitter",
 		config = function()
 			require("nvim-treesitter.configs").setup({
@@ -56,16 +56,6 @@ return {
 				auto_install = true,
 				sync_install = false,
 			})
-		end,
-	},
-	{
-		"neovim/nvim-lspconfig",
-		name = "neovim-lsp",
-		lazy = true,
-		event = { "BufRead", "BufNewFile" },
-		dependencies = {},
-		config = function()
-			require("ghost.plugins.config.static_lsp")
 		end,
 	},
 }

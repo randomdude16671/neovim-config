@@ -1,4 +1,4 @@
--- disable arrow keys 
+-- disable arrow keys
 vim.keymap.set("i", "<Up>", "<Nop>")
 vim.keymap.set("i", "<Right>", "<Nop>")
 vim.keymap.set("i", "<Down>", "<Nop>")
@@ -12,7 +12,7 @@ vim.keymap.set("v", "<Right>", "<Nop>")
 vim.keymap.set("v", "<Down>", "<Nop>")
 vim.keymap.set("v", "<Left>", "<Nop>")
 
--- other remaps 
+-- other remaps
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -24,6 +24,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "-", vim.cmd.Ex)
-vim.keymap.set("n", "q:", "<cmd>Telescope command_history<cr>", {noremap = true}) 
-vim.keymap.set("n", "q/", "<cmd>Telescope search_history<cr>", {noremap = true}) 
-vim.keymap.set("v", "<C-c>", "\"+y", {noremap = true})  -- cancelling remap :skull: 
+vim.keymap.set("n", "q:", "<cmd>Telescope command_history<cr>", { noremap = true })
+vim.keymap.set("n", "q/", "<cmd>Telescope search_history<cr>", { noremap = true })
+vim.keymap.set("v", "<C-c>", '"+y', { noremap = true }) -- cancelling remap :skull:
