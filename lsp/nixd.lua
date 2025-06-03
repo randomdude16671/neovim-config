@@ -1,6 +1,6 @@
 return {
     cmd = {
-        "nil",
+        "nixd",
     },
     filetypes = { "nix" },
     root_markers = { "flake.nix", "flake.lock", ".git", "shell.nix", "devenv.nix" },
