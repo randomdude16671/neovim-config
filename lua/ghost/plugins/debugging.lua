@@ -8,12 +8,14 @@ return {
         },
         -- stylua: ignore
         keys = {
-            { "<leader>db", function() require("dap").toggle_breakpoint() end, desc = "Toggle breakpoint" },
-            { "<Leader>dc", function() require("dap").continue() end,          desc = "Continue debugging" }
+            { "<leader>db",  function() require("dap").toggle_breakpoint() end, desc = "Toggle breakpoint" },
+            { "<leader>dc",  function() require("dap").continue() end,          desc = "Continue debugging" },
+            { "<leader>dso", function() require("dap").step_over() end,         desc = "Step over" },
+            { "<leader>dsi", function() require("dap").step_into() end,         desc = "Step over" },
         },
         config = function()
             local dap, dapui = require("dap"), require("dapui")
-
+            local ghost = require("ghost")
             require("dapui").setup()
             require("dap-go").setup()
 
@@ -30,15 +32,13 @@ return {
                 dapui.close()
             end
 
-            vim.keymap.set("n", "<Leader>dt", ":DapUiToggle<CR>", {})
-            vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
-            vim.keymap.set("n", "<Leader>dc", dap.continue, {})
-            vim.keymap.set("n", "<Leader>dr", ":lua require('dapui').open({reset = true})<CR>", {})
-
-            vim.fn.sign_define(
-                "DapBreakpoint",
-                { text = "⏺", texthl = "DapBreakpoint", linehl = "DapBreakpoint", numhl = "DapBreakpoint" }
-            )
+            for name, sign in pairs(ghost.core.icons.dap) do
+                sign = type(sign) == "table" and sign or { sign }
+                vim.fn.sign_define(
+                    "Dap" .. name,
+                    { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
+                )
+            end
         end,
     },
 }
