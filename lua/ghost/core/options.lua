@@ -6,12 +6,11 @@ vim.g.netrw_confirm = 0
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.guicursor = ""
-vim.o.expandtab = true
+vim.o.expandtab = false
 vim.o.shiftwidth = 4
 vim.o.smartindent = true
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
-vim.opt.fillchars = { eob = " " }
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.mouse = "a"

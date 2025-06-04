@@ -20,7 +20,7 @@ return {
         },
         appearance = {
             nerd_font_variant = "normal",
-            kind_icons = require("ghost.core.icons").icons.kinds,
+            kind_icons = require("ghost.core.icons").kinds,
         },
         sources = {
             default = { "lsp", "path", "buffer", "snippets", "lazydev" },

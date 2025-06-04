@@ -23,10 +23,6 @@ return {
             integrations = {
                 blink_cmp = true,
                 treesitter = true,
-                snacks = {
-                    enable = true,
-                    indent_scope_color = "lavender",
-                },
                 telescope = {
                     enable = true,
                 },
