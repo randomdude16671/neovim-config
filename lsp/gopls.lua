@@ -16,13 +16,14 @@ return {
                 vendor = true,
             },
             hints = {
-                assignVariableTypes = false,
-                compositeLiteralFields = false,
-                compositeLiteralTypes = false,
-                constantValues = false,
-                functionTypeParameters = false,
-                parameterNames = false,
-                rangeVariableTypes = false,
+                -- INLAY HINTS !!!
+                assignVariableTypes = true,
+                compositeLiteralFields = true,
+                compositeLiteralTypes = true,
+                constantValues = true,
+                functionTypeParameters = true,
+                parameterNames = true,
+                rangeVariableTypes = true,
             },
             analyses = {
                 nilness = true,

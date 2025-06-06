@@ -18,7 +18,6 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             stylua
-            luajit
             lua-language-server
             clang # to compile treeistter parsers
           ];
