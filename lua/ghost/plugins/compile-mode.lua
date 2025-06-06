@@ -3,7 +3,6 @@ return {
     branch = "nightly",
     dependencies = {
         "nvim-lua/plenary.nvim",
-        { "m00qek/baleia.nvim", tag = "v1.3.0" },
     },
     keys = {
         {

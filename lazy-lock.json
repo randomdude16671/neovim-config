@@ -1,10 +1,10 @@
 {
-  "baleia.nvim": { "branch": "main", "commit": "fb3aff021b2b64ef820d0230d2c22ebfaf71bb6a" },
   "blink.cmp": { "branch": "main", "commit": "86239578da58dff5ca43c3ebc992f184ee64354f" },
   "catppuccin.nvim": { "branch": "main", "commit": "a0c769bc7cd04bbbf258b3d5f01e2bdce744108d" },
   "compile-mode.nvim": { "branch": "nightly", "commit": "f43ba8bd0bf6c1a5c30f5849086811d9784a52d7" },
   "cord.nvim": { "branch": "master", "commit": "85d623661218c785379a554c59c71d1edde07114" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
+  "fzf-lua": { "branch": "main", "commit": "70a1c1d266af2ea4d1d9c16e09c60d3fc8c5aa5f" },
   "hardtime.nvim": { "branch": "main", "commit": "145b930954a3146cfb5b8a73cdcad42eb7d2740c" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
@@ -20,9 +20,7 @@
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "0f051e9813a36481f48ca1f833897210dbcfffde" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "render-markdown.nvim": { "branch": "main", "commit": "6f5a4c36d9383b2a916facaa63dcd573afa11ee8" },
-  "telescope-fzf-native.nvim": { "branch": "main", "commit": "1f08ed60cafc8f6168b72b80be2b2ea149813e55" },
   "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
   "treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
-  "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
-  "troublesum.nvim": { "branch": "master", "commit": "b00301bb565bfcb6fcfa41f2012e43a0528da65b" }
+  "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" }
 }
