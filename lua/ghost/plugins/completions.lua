@@ -52,6 +52,9 @@ return {
                 show_documentation = true,
             },
         },
+        fuzzy = {
+            implementation = "rust",
+        },
     },
     opts_extend = { "sources.default" },
 }

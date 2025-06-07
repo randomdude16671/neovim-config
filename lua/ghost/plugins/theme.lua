@@ -21,13 +21,14 @@ return {
             },
             transparent_background = false,
             integrations = {
+                snacks = {
+                    enabled = true,
+                    indent_scope_color = "blue",
+                },
                 blink_cmp = {
                     style = "bordered",
                 },
                 treesitter = true,
-                telescope = {
-                    enable = true,
-                },
                 native_lsp = {
                     enabled = true,
                     underlines = {

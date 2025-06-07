@@ -5,6 +5,7 @@ return {
     opts = {
         picker = { enabled = true },
         bigfile = { enabled = true },
+        indent = { enabled = true },
         dashboard = {
             enabled = true,
             preset = {
