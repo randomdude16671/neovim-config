@@ -21,7 +21,9 @@ return {
             },
             transparent_background = false,
             integrations = {
-                blink_cmp = true,
+                blink_cmp = {
+                    style = "bordered",
+                },
                 treesitter = true,
                 telescope = {
                     enable = true,

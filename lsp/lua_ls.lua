@@ -19,7 +19,7 @@ return {
         Lua = {
             runtime = { version = "LuaJIT" },
             diagnostics = {
-                globals = { "vim" },
+                globals = { "vim", "Snacks" }, -- Snacks for snacks.nvim
             },
             workspace = {
                 checkThirdParty = true,
