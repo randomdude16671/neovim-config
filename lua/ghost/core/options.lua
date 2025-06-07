@@ -42,5 +42,4 @@ vim.opt.lazyredraw = true
 vim.opt.completeopt = { "menuone", "noselect" }
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "·" }
+vim.opt.list = false
