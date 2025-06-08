@@ -1,5 +1,5 @@
 {
-  "blink.cmp": { "branch": "main", "commit": "86239578da58dff5ca43c3ebc992f184ee64354f" },
+  "blink.cmp": { "branch": "main", "commit": "102db2f5996a46818661845cf283484870b60450" },
   "catppuccin.nvim": { "branch": "main", "commit": "fa42eb5e26819ef58884257d5ae95dd0552b9a66" },
   "compile-mode.nvim": { "branch": "nightly", "commit": "f43ba8bd0bf6c1a5c30f5849086811d9784a52d7" },
   "cord.nvim": { "branch": "master", "commit": "85d623661218c785379a554c59c71d1edde07114" },
@@ -20,7 +20,6 @@
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "render-markdown.nvim": { "branch": "main", "commit": "6f5a4c36d9383b2a916facaa63dcd573afa11ee8" },
   "snacks.nvim": { "branch": "main", "commit": "bc0630e43be5699bb94dadc302c0d21615421d93" },
-  "telescope.nvim": { "branch": "master", "commit": "b4da76be54691e854d3e0e02c36b0245f945c2c7" },
   "treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" }
 }

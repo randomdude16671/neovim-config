@@ -4,6 +4,7 @@ return {
     change_detection = {
         notify = false,
     },
+    checker = { enabled = true }, -- auto check for plugin updates
 
     ui = {
         icons = {
@@ -43,5 +44,9 @@ return {
                 "editorconfig",
             },
         },
+    },
+    profiling = {
+        loader = true,
+        require = true,
     },
 }

@@ -61,7 +61,7 @@ return {
             end,
         },
         {
-            "<leader><leader>",
+            "<C-f>",
             function()
                 Snacks.picker.buffers()
             end,
