@@ -9,6 +9,7 @@ return {
         config = function()
             require("nvim-treesitter.configs").setup({
                 ensure_installed = { "lua", "nix", "regex", "vim", "vimdoc", "c", "bash", "go", "markdown" },
+                ignore_install = { "rust" },
                 highlight = {
                     enable = true,
                     additional_vim_regex_highlighting = false,

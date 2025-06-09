@@ -3,9 +3,6 @@ return {
     profile = true,
     event = "LspAttach",
     build = "nix run .#build-plugin", -- happy because its easy now
-    dependencies = {
-        "rafamadriz/friendly-snippets",
-    },
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
@@ -23,7 +20,7 @@ return {
             kind_icons = require("ghost.core.icons").kinds,
         },
         sources = {
-            default = { "lsp", "path", "buffer", "snippets", "lazydev" },
+            default = { "lsp", "path", "buffer", "lazydev" },
             providers = {
                 lazydev = {
                     name = "LazyDev",
