@@ -20,8 +20,6 @@ vim.o.numberwidth = 1
 vim.o.ruler = true
 vim.opt.shortmess:append("sI")
 vim.o.signcolumn = "yes"
-vim.o.splitbelow = true
-vim.o.splitright = true
 vim.o.timeoutlen = 400
 vim.o.undofile = true
 vim.opt.undodir = vim.fn.stdpath("cache") .. "/undo"
@@ -30,7 +28,7 @@ vim.g.loaded_node_provider = 0
 vim.g.loaded_python3_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
-vim.o.laststatus = 3
+vim.o.laststatus = 2
 vim.o.showmode = true
 vim.opt.updatetime = 50
 vim.opt.termguicolors = true
