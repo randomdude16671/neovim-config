@@ -62,8 +62,22 @@ vim.api.nvim_create_autocmd("LspAttach", {
             { "n", "<leader>e", vim.diagnostic.open_float, "Show Diagnostic" },
             { "n", "<leader>q", vim.diagnostic.setloclist, "Diagnostic Quickfix" },
             { "n", "<leader>li", "<cmd>LspInfo<CR>", "LSP Info" },
-            { "n", "K", require("blink.cmp").show_signature, "Signature override" },
-            { "i", "<C-h>", require("blink.cmp").show_signature, "Signature Help" },
+            {
+                "n",
+                "K",
+                function()
+                    require("blink.cmp").show_signature()
+                end,
+                "Signature override",
+            },
+            {
+                "i",
+                "<C-h>",
+                function()
+                    require("blink.cmp").show_signature()
+                end,
+                "Signature Help",
+            },
         }
 
         for _, map in ipairs(keymaps) do
