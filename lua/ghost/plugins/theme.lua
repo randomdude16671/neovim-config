@@ -25,6 +25,7 @@ return {
             },
             transparent_background = false,
             integrations = {
+                noice = true,
                 snacks = {
                     enabled = true,
                     indent_scope_color = "blue",

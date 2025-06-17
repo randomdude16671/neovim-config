@@ -26,7 +26,3 @@ vim.keymap.set("n", "-", vim.cmd.Ex)
 vim.keymap.set("n", "q:", "<cmd>Telescope command_history<cr>", { noremap = true })
 vim.keymap.set("n", "q/", "<cmd>Telescope search_history<cr>", { noremap = true })
 vim.keymap.set("v", "<C-c>", '"+y', { noremap = true }) -- cancelling remap :skull:
-
--- Keymaps for easy splits
-vim.keymap.set("n", "<C-s>", "<cmd>sp<cr><cmd>wincmd j<cr>")
-vim.keymap.set("n", "<C-v>", "<cmd>vsp<cr><cmd>wincmd l<cr>")
