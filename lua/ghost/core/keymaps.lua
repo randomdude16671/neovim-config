@@ -26,3 +26,6 @@ vim.keymap.set("n", "-", vim.cmd.Ex)
 vim.keymap.set("n", "q:", "<cmd>Telescope command_history<cr>", { noremap = true })
 vim.keymap.set("n", "q/", "<cmd>Telescope search_history<cr>", { noremap = true })
 vim.keymap.set("v", "<C-c>", '"+y', { noremap = true }) -- cancelling remap :skull:
+
+vim.keymap.set("n", "<leader>v", "<cmd>vsp | wincmd l<cr>")
+vim.keymap.set("n", "<leader>s", "<cmd>sp | wincmd j<cr>")
