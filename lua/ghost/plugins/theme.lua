@@ -1,7 +1,7 @@
 return {
     "catppuccin/nvim",
-    name = "catppuccin.nvim",
     event = "VeryLazy",
+    name = "catppuccin.nvim",
     config = function()
         require("catppuccin").setup({
             compile_path = vim.fn.stdpath("cache") .. "/catppuccin",

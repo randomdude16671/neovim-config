@@ -31,7 +31,7 @@ return {
         local FileName = {
             provider = function()
                 local name = vim.fn.expand("%:t")
-                return (name ~= "" and name or "[No Name]") .. "  "
+                return (name ~= "" and name or "[No Name]") .. " "
             end,
             hl = { fg = "#a6e3a1", bold = true },
         }
