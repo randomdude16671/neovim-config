@@ -6,12 +6,22 @@ return {
 
         local conditions = require("heirline.conditions")
 
-        -- Mode
+        -- mode
         local Mode = {
-            provider = function()
-                return vim.fn.mode():upper() .. " | "
+            provider = "  ",
+            hl = function()
+                local mode = vim.fn.mode()
+                if mode:match("n") then
+                    return { fg = "#a6e3a1", bold = true }
+                elseif mode:match("[vV]") then -- visual, V-line, ctrl-v
+                    return { fg = "#89b4fa", bold = true }
+                elseif mode:match("[iaR]") then -- insert, append, replace
+                    return { fg = "#f38ba8", bold = true }
+                else
+                    return { fg = "#fab387", bold = true }
+                end
             end,
-            hl = { fg = "#cba6f7", bold = true },
+            update = { "ModeChanged", "BufEnter" },
         }
 
         -- Git Branch
@@ -33,7 +43,27 @@ return {
                 local name = vim.fn.expand("%:t")
                 return (name ~= "" and name or "[No Name]") .. " "
             end,
-            hl = { fg = "#a6e3a1", bold = true },
+            hl = function()
+                return vim.fn.expand("%:t") == "" and { fg = "gray" } or { fg = "#a6e3a1", bold = true }
+            end,
+        }
+
+        -- Lsp status
+        local Lsp = {
+            provider = function()
+                local ft = vim.bo.filetype or "none"
+                local clients = vim.lsp.get_clients({ bufnr = 0 })
+                local lsp_names = {}
+
+                for _, client in ipairs(clients) do
+                    if client.name ~= "null-ls" and client.name ~= "none-ls" then
+                        table.insert(lsp_names, client.name)
+                    end
+                end
+                local lsp_str = #lsp_names > 0 and table.concat(lsp_names, ", ") or "0"
+                return string.format("  %s ~ %s ", ft, lsp_str)
+            end,
+            hl = { fg = "gray" },
         }
 
         -- DAP Status
@@ -102,8 +132,10 @@ return {
                 GitBranch,
                 FileName,
                 { provider = "%=" },
-                DapStatus,
                 Diagnostics,
+                DapStatus,
+                { provider = "%=" },
+                Lsp,
             },
         })
     end,
