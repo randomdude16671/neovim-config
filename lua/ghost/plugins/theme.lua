@@ -44,7 +44,7 @@ return {
                         ok = { "bold" },
                     },
                     inlay_hints = {
-                        background = true,
+                        background = false,
                     },
                     underlines = {
                         errors = { "underline" },
