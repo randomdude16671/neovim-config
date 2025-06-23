@@ -3,16 +3,15 @@ vim.lsp.enable({
     "nixd",
     "lua_ls",
     "clangd",
+    "zls",
 })
 
 vim.diagnostic.config({
-    virtual_lines = true,
+    virtual_text = {
+        enabled = true,
+    },
     update_in_insert = true,
     severity_sort = true,
-    float = {
-        border = "rounded",
-        source = true,
-    },
     signs = {
         text = {
             [vim.diagnostic.severity.ERROR] = require("ghost.core.icons").diagnostics.Error,

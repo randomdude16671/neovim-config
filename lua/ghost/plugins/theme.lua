@@ -36,6 +36,16 @@ return {
                 treesitter = true,
                 native_lsp = {
                     enabled = true,
+                    virtual_text = {
+                        errors = { "bold" },
+                        hints = { "bold" },
+                        warnings = { "bold" },
+                        information = { "bold" },
+                        ok = { "bold" },
+                    },
+                    inlay_hints = {
+                        background = true,
+                    },
                     underlines = {
                         errors = { "underline" },
                         hints = { "underline" },
