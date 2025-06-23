@@ -48,7 +48,7 @@ return {
             end,
         },
         {
-            "<C-p>",
+            "<C-f>",
             function()
                 Snacks.picker.buffers()
             end,
