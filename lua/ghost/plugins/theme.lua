@@ -7,7 +7,7 @@ return {
             compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
             flavour = "mocha",
             styles = {
-                comments = { "italic" },
+                comments = { "nocombine" },
                 conditionals = { "bold" },
             },
             highlight_overrides = {
