@@ -44,3 +44,16 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         vim.bo.filetype = "mini-build"
     end,
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback = function()
+        if vim.fn.isdirectory(vim.fn.getcwd(-1) .. "/.git") == 1 then
+            vim.api.nvim_create_autocmd("BufRead", {
+                callback = function()
+                    require("lazy").load({ plugins = { "gitsigns.nvim" } })
+                    require("lazy").load({ plugins = { "fugitive" } })
+                end,
+            })
+        end
+    end,
+})
