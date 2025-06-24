@@ -3,7 +3,6 @@ vim.lsp.enable({
     "nixd",
     "lua_ls",
     "clangd",
-    "zls",
 })
 
 vim.diagnostic.config({

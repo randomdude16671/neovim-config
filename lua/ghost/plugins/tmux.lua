@@ -1,6 +1,6 @@
 return {
     "alexghergh/nvim-tmux-navigation",
-    event = { "BufRead", "BufNewFile" },
+    event = "VeryLazy",
     config = function()
         require("nvim-tmux-navigation").setup({
             disable_when_zoomed = true, -- defaults to false
