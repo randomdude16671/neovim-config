@@ -5,9 +5,9 @@ return {
     config = function()
         require("catppuccin").setup({
             compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
+            no_italic = true,
             flavour = "mocha",
             styles = {
-                comments = { "nocombine" },
                 conditionals = { "bold" },
             },
             highlight_overrides = {

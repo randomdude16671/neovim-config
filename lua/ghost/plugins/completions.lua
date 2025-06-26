@@ -1,6 +1,9 @@
 return {
     "saghen/blink.cmp",
     profile = true,
+    dependencies = {
+        "rafamadriz/friendly-snippets",
+    },
     event = "LspAttach",
     build = "nix run .#build-plugin", -- happy because its easy now
     ---@module 'blink.cmp'
@@ -20,7 +23,7 @@ return {
             kind_icons = require("ghost.core.icons").kinds,
         },
         sources = {
-            default = { "lsp", "path", "buffer", "lazydev" },
+            default = { "lsp", "path", "buffer", "lazydev", "snippets" },
             providers = {
                 lazydev = {
                     name = "LazyDev",
