@@ -35,7 +35,7 @@ vim.opt.shortmess:append("sI")
 vim.o.mouse = "a"
 vim.opt.wrap = false
 vim.opt.scrolloff = 10
-vim.o.winborder = "rounded"
+vim.o.winborder = "single"
 vim.o.splitbelow = true
 vim.o.splitright = true
 

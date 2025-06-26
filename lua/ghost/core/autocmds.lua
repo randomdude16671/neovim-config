@@ -51,7 +51,6 @@ vim.api.nvim_create_autocmd("VimEnter", {
             vim.api.nvim_create_autocmd("BufRead", {
                 callback = function()
                     require("lazy").load({ plugins = { "gitsigns.nvim" } })
-                    require("lazy").load({ plugins = { "fugitive" } })
                 end,
             })
         end

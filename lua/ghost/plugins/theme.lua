@@ -30,6 +30,7 @@ return {
                     enabled = true,
                     indent_scope_color = "blue",
                 },
+                fidget = true,
                 blink_cmp = {
                     style = "bordered",
                 },

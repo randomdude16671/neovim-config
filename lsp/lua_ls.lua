@@ -22,6 +22,7 @@ return {
                 globals = { "vim", "Snacks" }, -- Snacks for snacks.nvim
             },
             workspace = {
+                library = { vim.env.VIMRUNTIME },
                 checkThirdParty = true,
             },
             telemetry = { enable = false },
