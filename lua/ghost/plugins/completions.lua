@@ -1,9 +1,7 @@
 return {
     "saghen/blink.cmp",
     profile = true,
-    dependencies = {
-        "rafamadriz/friendly-snippets",
-    },
+    version = "1.*",
     event = "LspAttach",
     build = "nix run .#build-plugin", -- happy because its easy now
     ---@module 'blink.cmp'
@@ -17,6 +15,11 @@ return {
                 end,
                 "fallback",
             },
+
+            ["<C-n>"] = { "snippet_forward" },
+            ["<C-j>"] = { "select_next" },
+            ["<C-k>"] = { "select_prev" },
+            ["<C-p>"] = { "snippet_backward" },
         },
         appearance = {
             nerd_font_variant = "normal",

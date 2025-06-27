@@ -1,0 +1,16 @@
+{
+	"flake": {
+		"prefix": "flake",
+		"body": [
+			"{",
+			"\tdescription = \"Does anyone actually read these?\";",
+			"\tinputs = {", 
+			"\t\tnixpkgs.url = \"github:nixos/nixpkgs/nixpkgs-unstable\";",
+			"\t\t${1:flake-utils.url}", 
+			"\t};",
+			"outputs = { self, nixpkgs, ${2:flake-utils} }:",
+			"${3:# code}",
+			"}"
+		]
+	}
+}
