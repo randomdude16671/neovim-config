@@ -6,7 +6,7 @@ return {
         input = {
             enabled = true,
         },
-        picker = { enabled = true },
+        picker = { enabled = true, layout = "select" },
         rename = { enabled = true },
         bigfile = { enabled = true },
         indent = { enabled = true },
