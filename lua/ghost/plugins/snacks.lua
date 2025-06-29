@@ -6,7 +6,7 @@ return {
         input = {
             enabled = true,
         },
-        picker = { enabled = true, layout = "select" },
+        picker = { enabled = true },
         rename = { enabled = true },
         bigfile = { enabled = true },
         indent = { enabled = true },
@@ -14,14 +14,14 @@ return {
             enabled = true,
             preset = {
                 header = [[
-  	 ___      ___ ___
-    	|\  \    /  /|\  \
-    	\ \  \  /  / | \  \
-    	 \ \  \/  / / \ \  \
-    	  \ \    / /   \ \  \
-    	   \ \__/ /     \ \__\
-    		\|__|/       \|__|
-	]],
+	 /$$    /$$ /$$$$$$
+	| $$   | $$|_  $$_/
+	| $$   | $$  | $$
+	|  $$ / $$/  | $$
+	 \  $$ $$/   | $$
+	  \  $$$/    | $$
+	   \  $/    /$$$$$$
+		\_/    |______/]],
             },
             sections = {
                 { section = "header" },

@@ -1,12 +1,15 @@
 return {
-    {
-        "lewis6991/gitsigns.nvim",
-        opts = {
+    "lewis6991/gitsigns.nvim",
+    event = "BufRead",
+    config = function()
+        require("gitsigns").setup({
             signs = {
-                add = { require("ghost.core.icons").git.addded },
-                changed = { require("ghost.core.icons").git.modified },
-                delete = { require("ghost.core.icons").git.removed },
+                add = { text = "+" },
+                change = { text = "~" },
+                delete = { text = "-" },
+                topdelete = { text = "-" },
+                changedelete = { text = "~" },
             },
-        },
-    },
+        })
+    end,
 }

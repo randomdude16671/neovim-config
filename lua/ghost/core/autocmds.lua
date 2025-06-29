@@ -39,20 +39,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     end,
 })
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "Taskfile", "*.mbuild" },
+    pattern = { "build.volt", "*.volt" },
     callback = function()
-        vim.bo.filetype = "mini-build"
-    end,
-})
-
-vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-        if vim.fn.isdirectory(vim.fn.getcwd(-1) .. "/.git") == 1 then
-            vim.api.nvim_create_autocmd("BufRead", {
-                callback = function()
-                    require("lazy").load({ plugins = { "gitsigns.nvim" } })
-                end,
-            })
-        end
+        vim.bo.filetype = "volt"
     end,
 })
