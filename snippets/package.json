@@ -5,7 +5,7 @@
 			{ "language": "nix", "path": "./nix.json" }, 
 			{ "language": "lua", "path": "./lua.json" }, 
 			{ "language": "go", "path": "./go.json" }, 
-			{ "language": "c", "path": "./c.json" }
+			{ "language": "c", "path": "./c.json" }, 
 			{ "language": "cpp", "path": "./c.json" }
 		]
 	}
