@@ -9,8 +9,8 @@ return {
         config = function()
             ---@diagnostic disable-next-line: missing-fields
             require("nvim-treesitter.configs").setup({
-                ensure_installed = { "lua", "nix", "regex", "vim", "vimdoc", "c", "bash", "go", "markdown" },
-                ignore_install = { "rust" },
+                ensure_installed = { "lua", "nix", "regex", "vim", "vimdoc", "c", "bash", "go", "markdown", "ini" },
+                ignore_install = { "rust", "rasi" },
                 highlight = {
                     enable = true,
                     additional_vim_regex_highlighting = false,

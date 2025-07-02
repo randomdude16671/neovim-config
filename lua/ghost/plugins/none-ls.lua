@@ -17,7 +17,6 @@ return {
 
                 -- Linting:
                 null_ls.builtins.diagnostics.golangci_lint,
-                null_ls.builtins.diagnostics.shellcheck,
             },
         })
     end,
