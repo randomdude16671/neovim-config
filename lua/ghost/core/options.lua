@@ -58,7 +58,6 @@ vim.opt.whichwrap:append("<>[]hl")
 -- Netrw settings
 vim.g.netrw_banner = 0
 vim.g.netrw_keepdir = 0
-vim.g.netrw_confirm = 0
 
 -- Disable unnecessary providers
 vim.g.loaded_node_provider = 0

@@ -8,7 +8,7 @@ return {
 
         -- mode
         local Mode = {
-            provider = "  ",
+            provider = "  | ",
             hl = function()
                 local mode = vim.fn.mode()
                 if mode:match("n") then
