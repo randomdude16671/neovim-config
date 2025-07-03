@@ -3,6 +3,7 @@ vim.lsp.enable({
     "nixd",
     "lua_ls",
     "clangd",
+    "rust_analyzer",
 })
 
 vim.diagnostic.config({
