@@ -13,19 +13,10 @@ return {
         dashboard = {
             enabled = true,
             preset = {
-                header = [[
-	 /$$    /$$ /$$$$$$
-	| $$   | $$|_  $$_/
-	| $$   | $$  | $$
-	|  $$ / $$/  | $$
-	 \  $$ $$/   | $$
-	  \  $$$/    | $$
-	   \  $/    /$$$$$$
-		\_/    |______/]],
+                header = [[vi]],
             },
             sections = {
                 { section = "header" },
-                { section = "keys", gap = 1, padding = 1 },
                 { section = "startup" },
             },
         },

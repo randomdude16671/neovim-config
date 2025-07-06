@@ -40,7 +40,6 @@ return {
                 "compiler",
                 "bugreport",
                 "ftplugin",
-                "shada",
                 "editorconfig",
             },
         },
