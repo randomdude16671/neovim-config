@@ -3,6 +3,7 @@ vim.lsp.enable({
     "nixd",
     "lua_ls",
     "clangd",
+    "haskell",
 })
 
 vim.diagnostic.config({
