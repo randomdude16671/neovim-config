@@ -12,9 +12,6 @@ return {
         indent = { enabled = true },
         dashboard = {
             enabled = true,
-            preset = {
-                header = [[vi]],
-            },
             sections = {
                 { section = "header" },
                 { section = "startup" },

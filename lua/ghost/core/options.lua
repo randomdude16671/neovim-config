@@ -31,11 +31,9 @@ vim.opt.termguicolors = true
 vim.o.signcolumn = "yes"
 vim.o.laststatus = 2
 vim.o.showmode = true
-vim.opt.shortmess:append("sI")
 vim.o.mouse = "a"
 vim.opt.wrap = false
 vim.opt.scrolloff = 10
-vim.o.winborder = "single"
 vim.o.splitbelow = true
 vim.o.splitright = true
 
