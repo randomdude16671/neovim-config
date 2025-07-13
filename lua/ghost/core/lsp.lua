@@ -2,6 +2,7 @@ vim.lsp.enable({
     "gopls",
     "nixd",
     "lua_ls",
+    "pyright",
     "clangd",
     "haskell",
 })

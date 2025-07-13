@@ -47,7 +47,7 @@ return {
             },
         },
         signature = {
-            enabled = true,
+            enabled = false,
             trigger = { enabled = true },
             window = {
                 scrollbar = false,
