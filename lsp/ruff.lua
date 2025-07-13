@@ -7,7 +7,6 @@ return {
     root_markers = {
         ".git",
         "main.py",
-        "pyrightconfig.json",
     },
     settings = {
         python = {
