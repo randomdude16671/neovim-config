@@ -19,7 +19,6 @@ return {
         },
         quickfile = { enabled = true },
         scope = { enabled = true },
-        notifier = { enabled = true },
         terminal = { enabled = true },
     },
     keys = {

@@ -1,7 +1,7 @@
 return {
     cmd = {
-        "pyright-langserver",
-        "--stdio",
+        "ruff",
+        "server",
     },
     filetypes = { "python" },
     root_markers = {
