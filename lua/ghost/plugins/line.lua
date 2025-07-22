@@ -6,6 +6,25 @@ return {
 
         local conditions = require("heirline.conditions")
 
+        local WordsMd = {
+            provider = function()
+                if vim.bo.ft == "lua" then
+                    local l = "wc: " .. vim.fn.wordcount().words .. " "
+                    return l
+                end
+            end,
+            hl = function()
+                local words = vim.fn.wordcount().words
+                if words < 199 then
+                    return { fg = "#a6e3a1" }
+                elseif words < 400 then
+                    return { fg = "#fab387" }
+                elseif words >= 400 then
+                    return { fg = "#f38ba8" }
+                end
+            end,
+        }
+
         -- mode
         local Mode = {
             provider = "  | ",
@@ -135,6 +154,7 @@ return {
                 Diagnostics,
                 DapStatus,
                 { provider = "%=" },
+                WordsMd,
                 Lsp,
             },
         })

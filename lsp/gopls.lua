@@ -4,6 +4,7 @@ return {
     root_markers = { "go.mod", "go.work", ".git" },
     settings = {
         gopls = {
+            buildFlags = { "-tags=debug" },
             gofumpt = true,
             codelenses = {
                 gc_details = false,

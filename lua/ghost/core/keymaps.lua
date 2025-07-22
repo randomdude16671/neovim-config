@@ -27,3 +27,18 @@ vim.keymap.set("v", "<C-c>", '"+y', { noremap = true }) -- cancelling remap :sku
 
 vim.keymap.set("n", "<leader>v", "<cmd>vsp | wincmd l<cr>")
 vim.keymap.set("n", "<leader>s", "<cmd>sp | wincmd j<cr>")
+
+vim.keymap.set("n", "<leader>j", function()
+    local line = vim.api.nvim_get_current_line()
+    local chunk = "return " .. line
+    local f, err = load(chunk)
+    if not f then
+        f, err = load(line) -- try as statement
+    end
+    local ok, result = pcall(f)
+    if ok then
+        print(vim.inspect(result))
+    else
+        print("Error:", result or err)
+    end
+end, { desc = "Eval Lua expression" })
