@@ -3,7 +3,7 @@ return {
     name = "zk",
     ft = "markdown",
     config = function()
-        vim.keymap.set("n", "<leader>f", "<cmd>ZkNotes<cr>")
+        vim.keymap.set("n", "<leader><space>", "<cmd>ZkNotes<cr>")
         require("zk").setup({
             picker = "snacks_picker",
             lsp = {

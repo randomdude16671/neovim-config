@@ -5,7 +5,7 @@
 			"local M = {}", 
 			"",
 			"function M.${1:setup}()",
-			"\t${2: -- body}",
+			"\t${0:}",
 			"end", 
 			"", 
 			"return M"
@@ -16,7 +16,7 @@
 		"prefix": "plugin_func", 
 		"body": [
 			"function M.${1:func_name}()", 
-			"\t${2:-- body}",
+			"\t${0:}",
 			"end"
 		]
 	}, 
@@ -24,8 +24,8 @@
 	"function": {
 		"prefix": "function", 
 		"body": [
-			"function ${1: }()", 
-			"\t{2:-- Code}", 
+			"function ${1:}()", 
+			"\t${0:}", 
 			"end"
 		]
 	}

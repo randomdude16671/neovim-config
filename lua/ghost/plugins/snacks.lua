@@ -1,4 +1,3 @@
--- I don't know how to disable icons here :sadge:
 return {
     "folke/snacks.nvim",
     lazy = false,
@@ -38,6 +37,12 @@ return {
             "<C-f>",
             function()
                 Snacks.picker.buffers()
+            end,
+        },
+        {
+            "<leader>ss",
+            function()
+                Snacks.picker.lsp_workspace_symbols()
             end,
         },
     },

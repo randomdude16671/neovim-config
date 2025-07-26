@@ -4,7 +4,6 @@ vim.lsp.enable({
     "lua_ls",
     "ruff",
     "clangd",
-    "haskell",
 })
 
 vim.diagnostic.config({

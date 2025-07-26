@@ -1,16 +1,19 @@
 {
-	"flake": {
-		"prefix": "flake",
-		"body": [
-			"{",
-			"\tdescription = \"Does anyone actually read these?\";",
-			"\tinputs = {", 
-			"\t\tnixpkgs.url = \"github:nixos/nixpkgs/nixpkgs-unstable\";",
-			"\t\t${1:flake-utils.url}", 
-			"\t};",
-			"outputs = { self, nixpkgs, ${2:flake-utils} }:",
-			"${3:# code}",
-			"}"
-		]
-	}
+  "flake": {
+    "prefix": "flake",
+    "body": [
+      "{",
+      "  description = \"${1:my-flake}\";",
+      "",
+      "  inputs = {",
+      "    nixpkgs.url = \"github:NixOS/nixpkgs/nixpkgs-unstable\";",
+      "  };",
+      "",
+      "  outputs = { self, nixpkgs }: {",
+      "    ${0:}",
+      "  };",
+      "}"
+    ],
+    "description": "Minimal Nix flake with nixpkgs input"
+  }
 }
