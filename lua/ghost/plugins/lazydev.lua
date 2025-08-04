@@ -1,5 +1,6 @@
 return {
-    "folke/lazydev.nvim",
+    dir = "~/Project/lazydev.nvim/",
+    branch = "vim-deprecated-fix-11.0",
     ft = "lua",
     opts = {
         library = {
