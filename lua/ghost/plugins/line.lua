@@ -8,8 +8,8 @@ return {
 
         local WordsMd = {
             provider = function()
-                if vim.bo.ft == "lua" then
-                    local l = "wc: " .. vim.fn.wordcount().words .. " "
+                if vim.bo.ft == "markdown" then
+                    local l = "wc: " .. vim.fn.wordcount().words .. "  "
                     return l
                 end
             end,
