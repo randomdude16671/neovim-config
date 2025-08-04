@@ -20,6 +20,7 @@ return {
                         NormalFloat = { bg = colors.none },
                         FloatBorder = { bg = colors.none },
                         Pmenu = { bg = colors.none },
+                        EndOfBuffer = { fg = "#45475a" },
                     }
                 end,
             },
