@@ -30,14 +30,12 @@ return {
             },
             transparent_background = false,
             integrations = {
-                noice = true,
                 dap_ui = true,
                 dap = true,
                 snacks = {
                     enabled = true,
                     indent_scope_color = "blue",
                 },
-                fidget = true,
                 blink_cmp = {
                     style = "bordered",
                 },

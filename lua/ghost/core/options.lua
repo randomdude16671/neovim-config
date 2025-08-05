@@ -6,6 +6,9 @@ vim.g.maplocalleader = " "
 vim.o.cursorline = true
 vim.o.cursorlineopt = "number"
 
+-- GUI cursor
+vim.o.guicursor = ""
+
 -- Line numbers
 vim.o.number = true
 vim.o.relativenumber = true
