@@ -6,6 +6,10 @@ return {
         require("catppuccin").setup({
             compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
             no_italic = true,
+            float = {
+                transparent = true,
+                solid = true,
+            },
             flavour = "mocha",
             styles = {
                 conditionals = { "bold" },
