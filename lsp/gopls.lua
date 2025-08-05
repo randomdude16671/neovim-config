@@ -27,6 +27,11 @@ return {
                 rangeVariableTypes = true,
             },
             analyses = {
+                -- Comment style checkers:
+                ST1000 = false,
+                ST1020 = false,
+
+                -- The rest:
                 nilness = true,
                 unusedparams = true,
                 unusedwrite = true,
