@@ -1,18 +1,12 @@
 return {
-    cmd = {
-        "ruff",
-        "server",
-    },
+    cmd = { "pyright-langserver", "--stdio" },
     filetypes = { "python" },
-    root_markers = {
-        ".git",
-        "main.py",
-    },
     settings = {
         python = {
             analysis = {
-                autoSeachPaths = true,
+                autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
+                diagnosticMode = "openFilesOnly",
             },
         },
     },
