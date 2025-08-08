@@ -5,7 +5,13 @@ return {
         input = {
             enabled = true,
         },
-        picker = { enabled = true },
+        picker = {
+            enabled = true,
+            matcher = {
+                frecency = true,
+            },
+            layout = "dropdown",
+        },
         rename = { enabled = true },
         bigfile = { enabled = true },
         indent = { enabled = true },
@@ -18,25 +24,19 @@ return {
         },
         quickfile = { enabled = true },
         scope = { enabled = true },
-        terminal = { enabled = true },
+        terminal = { enabled = false },
     },
     keys = {
         {
             "<leader>f",
             function()
-                Snacks.picker.files()
+                Snacks.picker.smart()
             end,
         },
         {
             "<leader>g",
             function()
                 Snacks.picker.grep()
-            end,
-        },
-        {
-            "<C-f>",
-            function()
-                Snacks.picker.buffers()
             end,
         },
         {
