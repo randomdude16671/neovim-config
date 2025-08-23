@@ -10,7 +10,7 @@ return {
             matcher = {
                 frecency = true,
             },
-            layout = "dropdown",
+            layout = "select",
         },
         rename = { enabled = true },
         bigfile = { enabled = true },
@@ -30,7 +30,7 @@ return {
         {
             "<leader>f",
             function()
-                Snacks.picker.smart()
+                Snacks.picker.files()
             end,
         },
         {
