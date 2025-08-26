@@ -47,7 +47,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "dart"
+    pattern = "dart", 
     callback = function()
         vim.opt_local.expandtab = true
         vim.opt_local.shiftwidth = 2
