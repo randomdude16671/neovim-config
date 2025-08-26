@@ -3,6 +3,7 @@
   "catppuccin.nvim": { "branch": "main", "commit": "30fa4d122d9b22ad8b2e0ab1b533c8c26c4dde86" },
   "compile-mode.nvim": { "branch": "nightly", "commit": "46440a2609875e67873a0a39c2a32b464a5a5f3c" },
   "cord.nvim": { "branch": "master", "commit": "5949433e6775d89b0654f79f208da86f62a96510" },
+  "flutter-tools.nvim": { "branch": "main", "commit": "65b7399804315a1160933b64292d3c5330aa4e9f" },
   "gitsigns.nvim": { "branch": "main", "commit": "6e3c66548035e50db7bd8e360a29aec6620c3641" },
   "haskell-tools.nvim": { "branch": "master", "commit": "5fb8eda3c4430cb1d473d3e2138b070bdca1c224" },
   "heirline.nvim": { "branch": "master", "commit": "fae936abb5e0345b85c3a03ecf38525b0828b992" },
