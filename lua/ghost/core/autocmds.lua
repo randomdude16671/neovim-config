@@ -22,15 +22,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "netrw",
-    -- make it like normal netrw (it does matter)
-    callback = function()
-        vim.opt_local.cursorline = true
-        vim.opt_local.cursorlineopt = "both"
-    end,
-})
-
-vim.api.nvim_create_autocmd("FileType", {
     pattern = "nix",
     callback = function()
         vim.opt_local.expandtab = true
@@ -47,11 +38,11 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "dart", 
+    pattern = "dart",
     callback = function()
         vim.opt_local.expandtab = true
         vim.opt_local.shiftwidth = 2
         vim.opt_local.softtabstop = 2
         vim.opt_local.tabstop = 2
-    end, 
+    end,
 })

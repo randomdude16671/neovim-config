@@ -1,5 +1,6 @@
 return {
     "stevearc/oil.nvim",
+    lazy = false, -- Load at startup for default_file_explorer
     ---@module 'oil'
     ---@type oil.SetupOpts
     opts = {
