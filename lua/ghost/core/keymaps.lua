@@ -22,7 +22,6 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set("n", "-", vim.cmd.Ex)
 vim.keymap.set("v", "<C-c>", '"+y', { noremap = true }) -- cancelling remap :skull:
 
 vim.keymap.set("n", "<leader>v", "<cmd>vsp | wincmd l<cr>")

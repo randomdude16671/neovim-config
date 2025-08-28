@@ -19,7 +19,7 @@
           packages = with pkgs; [
             stylua
             lua-language-server
-            clang # to compile treeistter parsers
+            clang # to compile treesitter parsers
           ];
         };
         formatter = pkgs.alejandra;

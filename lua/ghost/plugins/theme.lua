@@ -17,22 +17,24 @@ return {
             highlight_overrides = {
                 all = function(colors)
                     return {
-                        DiagnosticVirtualTextError = { bg = colors.none  },
-                        DiagnosticVirtualTextWarn  = { bg = colors.none  },
-                        DiagnosticVirtualTextInfo  = { bg = colors.none  },
-                        DiagnosticVirtualTextHint  = { bg = colors.none  },
-                        NormalFloat                = { bg = colors.none  },
-                        FloatBorder                = { bg = colors.none  },
-                        Pmenu                      = { bg = colors.none  },
-                        EndOfBuffer                = { fg = "#45475a"    },
-                        CompileModeMessageRow      = { fg = colors.mauve }, 
-                        CompileModeMessageCol      = { fg = colors.sky   }, 
-                        CompileModeError           = { fg = colors.red   },
-                        CompileModeWarning         = { fg = colors.peach },
-                        CompileModeInfo            = { fg = colors.green },
+                        DiagnosticVirtualTextError = { bg = colors.none },
+                        DiagnosticVirtualTextWarn = { bg = colors.none },
+                        DiagnosticVirtualTextInfo = { bg = colors.none },
+                        DiagnosticVirtualTextHint = { bg = colors.none },
+                        NormalFloat = { bg = colors.none },
+                        FloatBorder = { bg = colors.none },
+                        Pmenu = { bg = colors.none },
+                        EndOfBuffer = { fg = "#45475a" },
+                        CompileModeMessageRow = { fg = colors.mauve },
+                        CompileModeMessageCol = { fg = colors.sky },
+                        CompileModeError = { fg = colors.red },
+                        CompileModeWarning = { fg = colors.peach },
+                        CompileModeInfo = { fg = colors.green },
                     }
                 end,
             },
+
+            default_integrations = true,
             transparent_background = false,
             integrations = {
                 dap_ui = true,
