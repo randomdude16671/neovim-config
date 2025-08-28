@@ -1,8 +1,5 @@
+-- this one works better than the lua version (nvim-spider)
 return {
-    "chrisgrieser/nvim-spider",
-    keys = {
-        { "w", "<cmd>lua require('spider').motion('w')<CR>", mode = { "n", "o", "x" } },
-        { "e", "<cmd>lua require('spider').motion('e')<CR>", mode = { "n", "o", "x" } },
-        { "b", "<cmd>lua require('spider').motion('b')<CR>", mode = { "n", "o", "x" } },
-    },
+    "chaoren/vim-wordmotion",
+    event = { "BufRead", "BufNewFile" },
 }
