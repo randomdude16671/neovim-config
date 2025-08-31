@@ -1,36 +1,43 @@
 return {
     "folke/snacks.nvim",
     lazy = false,
-    opts = {
-        input = {
-            enabled = true,
-        },
-        picker = {
-            enabled = true,
-            matcher = {
-                frecency = true,
+    opts = function()
+        return {
+            input = {
+                enabled = true,
             },
-            layout = "select",
-        },
-        rename = { enabled = true },
-        bigfile = { enabled = true },
-        indent = { enabled = true },
-        dashboard = {
-            enabled = true,
-            sections = {
-                { section = "header" },
-                { section = "startup" },
+            picker = {
+                enabled = true,
+                matcher = {
+                    frecency = true,
+                },
             },
-        },
-        quickfile = { enabled = true },
-        scope = { enabled = true },
-        terminal = { enabled = false },
-    },
+            rename = { enabled = true },
+            bigfile = { enabled = true },
+            indent = { enabled = true },
+            dashboard = {
+                enabled = true,
+                sections = {
+                    { section = "header" },
+                    { section = "startup" },
+                },
+                quickfile = { enabled = true },
+                scope = { enabled = true },
+                terminal = { enabled = false },
+            },
+        }
+    end,
     keys = {
         {
             "<leader>f",
             function()
                 Snacks.picker.files()
+            end,
+        },
+        {
+            "<C-p>",
+            function()
+                require("ghost.picker").file_browser("")
             end,
         },
         {

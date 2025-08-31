@@ -11,9 +11,6 @@ return {
                 solid = true,
             },
             flavour = "mocha",
-            styles = {
-                conditionals = { "bold" },
-            },
             highlight_overrides = {
                 all = function(colors)
                     return {
