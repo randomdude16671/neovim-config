@@ -32,7 +32,7 @@ return {
             },
 
             default_integrations = true,
-            transparent_background = false,
+            transparent_background = true,
             integrations = {
                 dap_ui = true,
                 dap = true,
