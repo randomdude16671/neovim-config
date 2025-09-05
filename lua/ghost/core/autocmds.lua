@@ -1,7 +1,7 @@
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",
     callback = function(args)
-        vim.lsp.buf.format({ async = false }) -- format the current buffer according to lsp or none-ls
+        vim.lsp.buf.format { async = false } -- format the current buffer according to lsp or none-ls
     end,
 })
 
@@ -17,7 +17,7 @@ vim.api.nvim_create_augroup("highlight_yank", {})
 vim.api.nvim_create_autocmd("TextYankPost", {
     group = "highlight_yank",
     callback = function()
-        vim.highlight.on_yank({ higroup = "IncSearch", timeout = 200 })
+        vim.highlight.on_yank { higroup = "IncSearch", timeout = 200 }
     end,
 })
 

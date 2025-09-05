@@ -47,13 +47,13 @@ vim.opt.updatetime = 50
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.o.undofile = true
-vim.opt.undodir = vim.fn.stdpath("cache") .. "/undo"
+vim.opt.undodir = vim.fn.stdpath "cache" .. "/undo"
 
 -- Completion
 vim.opt.completeopt = { "menuone", "noselect" }
 
 -- Movement wrapping
-vim.opt.whichwrap:append("<>[]hl")
+vim.opt.whichwrap:append "<>[]hl"
 
 -- Disable unnecessary providers
 vim.g.loaded_node_provider = 0

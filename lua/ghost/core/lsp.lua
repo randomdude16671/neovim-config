@@ -1,12 +1,12 @@
-vim.lsp.enable({
+vim.lsp.enable {
     "gopls",
     "nixd",
     "lua_ls",
     "pyright",
     "clangd",
-})
+}
 
-vim.diagnostic.config({
+vim.diagnostic.config {
     virtual_text = {
         enabled = true,
     },
@@ -24,7 +24,7 @@ vim.diagnostic.config({
             [vim.diagnostic.severity.WARN] = "WarningMsg",
         },
     },
-})
+}
 
 vim.api.nvim_create_autocmd("LspAttach", {
     desc = "Lsp Keymaps",
@@ -54,7 +54,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
                 "n",
                 "<leader>lo",
                 function()
-                    vim.lsp.buf.format({ async = true })
+                    vim.lsp.buf.format { async = true }
                 end,
                 "Format Code",
             },

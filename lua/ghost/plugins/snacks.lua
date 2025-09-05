@@ -17,14 +17,30 @@ return {
             indent = { enabled = true },
             dashboard = {
                 enabled = true,
+                preset = {
+                    keys = {
+                        {
+                            icon = " ",
+                            key = "f",
+                            desc = "Search files",
+                            action = ":lua Snacks.dashboard.pick('files')",
+                        },
+                        {
+                            icon = " ",
+                            key = "s",
+                            desc = "Show cool logo",
+                            action = ":terminal ~/.config/nvim/logo.sh",
+                        },
+                    },
+                },
                 sections = {
                     { section = "header" },
-                    { section = "startup" },
+                    { icon = " ", title = "keys", section = "keys", indent = 2, padding = 1 },
                 },
-                quickfile = { enabled = true },
-                scope = { enabled = true },
-                terminal = { enabled = false },
             },
+            quickfile = { enabled = true },
+            scope = { enabled = true },
+            terminal = { enabled = false },
         }
     end,
     keys = {
@@ -37,7 +53,7 @@ return {
         {
             "<C-p>",
             function()
-                require("ghost.picker").file_browser("")
+                require("ghost.picker").file_browser ""
             end,
         },
         {
