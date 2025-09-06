@@ -28,7 +28,7 @@ return {
                         {
                             icon = " ",
                             key = "s",
-                            desc = "Show cool logo",
+                            desc = "Show NixOS logo",
                             action = ":terminal ~/.config/nvim/logo.sh",
                         },
                     },
@@ -36,6 +36,7 @@ return {
                 sections = {
                     { section = "header" },
                     { icon = " ", title = "keys", section = "keys", indent = 2, padding = 1 },
+                    { icon = "  ", section = "startup" },
                 },
             },
             quickfile = { enabled = true },
