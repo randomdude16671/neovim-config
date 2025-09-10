@@ -55,6 +55,10 @@ vim.opt.completeopt = { "menuone", "noselect" }
 -- Movement wrapping
 vim.opt.whichwrap:append "<>[]hl"
 
+-- Netrw settings (added BACK recently)
+vim.g.netrw_banner = 0
+vim.g.netrw_keepdir = 0
+
 -- Disable unnecessary providers
 vim.g.loaded_node_provider = 0
 vim.g.loaded_python3_provider = 0
