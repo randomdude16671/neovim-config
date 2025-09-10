@@ -27,6 +27,7 @@ vim.keymap.set("v", "<C-c>", '"+y', { noremap = true }) -- cancelling remap :sku
 vim.keymap.set("n", "<leader>v", "<cmd>vsp | wincmd l<cr>")
 vim.keymap.set("n", "<leader>s", "<cmd>sp | wincmd j<cr>")
 
+vim.keymap.set("n", "-", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>j", function()
     local line = vim.api.nvim_get_current_line()
     local chunk = "return " .. line
