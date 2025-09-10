@@ -50,7 +50,7 @@ return {
                 null_ls.builtins.formatting.goimports,
                 null_ls.builtins.formatting.gofumpt,
                 null_ls.builtins.formatting.stylua,
-                null_ls.builtins.formatting.alejandra, -- Nix formatter
+                null_ls.builtins.formatting.nixfmt,
                 null_ls.builtins.formatting.clang_format.with {
                     filetypes = { "c", "cpp" },
                 },
