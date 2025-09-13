@@ -2,7 +2,7 @@ return {
     "lewis6991/gitsigns.nvim",
     event = "BufRead",
     config = function()
-        require("gitsigns").setup {
+        require("gitsigns").setup({
             signs = {
                 add = { text = "+" },
                 change = { text = "~" },
@@ -17,6 +17,6 @@ return {
                 topdelete = { text = "-" },
                 changedelete = { text = "~" },
             },
-        }
+        })
     end,
 }

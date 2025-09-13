@@ -24,7 +24,7 @@ function M.file_browser(start_dir)
         local entries = {}
 
         -- Add parent dir
-        if dir ~= "/" and dir ~= "\\" and not dir:match "^%a:[\\/]?$" then
+        if dir ~= "/" and dir ~= "\\" and not dir:match("^%a:[\\/]?$") then
             table.insert(entries, {
                 text = "../",
                 file = vim.fn.fnamemodify(dir, ":h"),
@@ -40,8 +40,8 @@ function M.file_browser(start_dir)
                     break
                 end
 
-                if opts.show_hidden or not name:match "^%." then
-                    local full_path = dir .. (dir:match "[\\/]$" and "" or "/") .. name
+                if opts.show_hidden or not name:match("^%.") then
+                    local full_path = dir .. (dir:match("[\\/]$") and "" or "/") .. name
                     local is_dir = type == "directory" or (type == "link" and vim.fn.isdirectory(full_path) == 1)
 
                     local icon = ""
@@ -74,7 +74,7 @@ function M.file_browser(start_dir)
             keys[opts.keymaps.confirm] = { "browse_enter", mode = { "n", "i" } }
         end
 
-        require("snacks").picker {
+        require("snacks").picker({
             title = "File Browser: " .. dir,
             items = entries,
             actions = {
@@ -97,10 +97,10 @@ function M.file_browser(start_dir)
                 end,
             },
             win = { input = { keys = keys } },
-        }
+        })
     end
 
-    local start = start_dir or vim.fn.expand "%:p:h"
+    local start = start_dir or vim.fn.expand("%:p:h")
     if start == "" then
         start = uv.cwd()
     end

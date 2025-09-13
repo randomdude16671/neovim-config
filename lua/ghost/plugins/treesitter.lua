@@ -4,7 +4,7 @@ return {
     name = "treesitter",
     config = function()
         ---@diagnostic disable-next-line: missing-fields
-        require("nvim-treesitter.configs").setup {
+        require("nvim-treesitter.configs").setup({
             ensure_installed = {
                 "lua",
                 "nix",
@@ -35,6 +35,6 @@ return {
             },
             auto_install = true,
             sync_install = false,
-        }
+        })
     end,
 }

@@ -3,8 +3,8 @@ return {
     event = "VeryLazy",
     name = "catppuccin.nvim",
     config = function()
-        require("catppuccin").setup {
-            compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
+        require("catppuccin").setup({
+            compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
             no_italic = true,
             float = {
                 transparent = true,
@@ -64,8 +64,8 @@ return {
                     },
                 },
             },
-        }
+        })
 
-        vim.cmd.colorscheme "catppuccin"
+        vim.cmd.colorscheme("catppuccin")
     end,
 }

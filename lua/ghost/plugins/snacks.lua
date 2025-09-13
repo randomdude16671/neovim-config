@@ -54,7 +54,7 @@ return {
         {
             "<C-p>",
             function()
-                require("ghost.picker").file_browser ""
+                require("ghost.picker").file_browser("")
             end,
         },
         {

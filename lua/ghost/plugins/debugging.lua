@@ -26,8 +26,8 @@ return {
 			{ "<leader>dw", function() require("dap.ui.widgets").hover() end,                                     desc = "Widgets" },
 		},
         config = function()
-            local dap, dapui = require "dap", require "dapui"
-            local ghost_icons = require "ghost.core.icons"
+            local dap, dapui = require("dap"), require("dapui")
+            local ghost_icons = require("ghost.core.icons")
             require("dapui").setup()
             require("dap-go").setup()
 

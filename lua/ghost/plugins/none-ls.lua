@@ -3,7 +3,7 @@ return {
     event = "LspAttach",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-        local null_ls = require "null-ls"
+        local null_ls = require("null-ls")
         local custom_diagnostics = {
             {
                 name = "func-annotation-checker-lua",
@@ -14,10 +14,10 @@ return {
                     fn = function(params)
                         local diagnostics = {}
                         for i, line in ipairs(params.content) do
-                            local func_params = line:match "^%s*function%s+[%w%.]+%((.-)%)"
-                            if func_params and func_params:match "%S" then
+                            local func_params = line:match("^%s*function%s+[%w%.]+%((.-)%)")
+                            if func_params and func_params:match("%S") then
                                 local previous_line = params.content[i - 1] or ""
-                                if not previous_line:match "^%-%-%-?%s*@param" then
+                                if not previous_line:match("^%-%-%-?%s*@param") then
                                     table.insert(diagnostics, {
                                         row = i,
                                         col = 0,
@@ -36,28 +36,28 @@ return {
         }
 
         for _, diag in ipairs(custom_diagnostics) do
-            null_ls.register {
+            null_ls.register({
                 name = diag.name,
                 method = null_ls.methods.DIAGNOSTICS_ON_SAVE,
                 filetypes = diag.filetypes,
                 generator = diag.generator,
-            }
+            })
         end
 
-        null_ls.setup {
+        null_ls.setup({
             sources = {
                 -- Formatting:
                 null_ls.builtins.formatting.goimports,
                 null_ls.builtins.formatting.gofumpt,
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.formatting.nixfmt,
-                null_ls.builtins.formatting.clang_format.with {
+                null_ls.builtins.formatting.clang_format.with({
                     filetypes = { "c", "cpp" },
-                },
+                }),
 
                 -- Linting:
                 null_ls.builtins.diagnostics.golangci_lint,
             },
-        }
+        })
     end,
 }
