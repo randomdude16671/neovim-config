@@ -1,4 +1,5 @@
 vim.lsp.enable({
+    "tinymist",
     "gopls",
     "nixd",
     "lua_ls",

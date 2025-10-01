@@ -16,6 +16,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("ghost.core.autocmds")
 require("ghost.core.keymaps")
-vim.cmd.so("~/.config/nvim/lua/ghost/core/keymaps.lua")
 require("ghost.core.options")
 require("ghost.core.lsp")

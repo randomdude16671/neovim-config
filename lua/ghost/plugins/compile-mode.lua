@@ -1,6 +1,5 @@
 return {
     "ej-shafran/compile-mode.nvim",
-    branch = "nightly",
     dependencies = {
         "nvim-lua/plenary.nvim",
     },
@@ -12,8 +11,10 @@ return {
         },
     },
     config = function()
+        ---@type CompileModeOptis
         vim.g.compile_mode = {
             default_command = "",
+            bang_expansion = true,
         }
     end,
 }
