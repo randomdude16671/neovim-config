@@ -14,7 +14,8 @@ return {
                 "bash",
                 "go",
                 "markdown",
-                "haskell",
+                "rust",
+                "typst",
             },
             highlight = {
                 enable = true,
