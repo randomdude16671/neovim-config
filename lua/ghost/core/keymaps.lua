@@ -42,3 +42,5 @@ vim.keymap.set("n", "<leader>j", function()
         print("Error:", result or err)
     end
 end, { desc = "Eval Lua expression" })
+
+vim.keymap.set({ "i", "n" }, "<C-e>", "<cmd>e#<cr>")
