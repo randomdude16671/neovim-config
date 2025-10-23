@@ -1,3 +1,5 @@
+vim.loader.enable() -- speed up lua module loading
+
 require("ghost.core")
 vim.cmd.so("~/.config/nvim/lua/ghost/core/keymaps.lua")
 

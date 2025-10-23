@@ -36,6 +36,7 @@ return {
             integrations = {
                 dap_ui = true,
                 dap = true,
+                noice = true,
                 snacks = {
                     enabled = true,
                     indent_scope_color = "blue",
