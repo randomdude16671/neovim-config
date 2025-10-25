@@ -41,7 +41,7 @@ return {
             },
             quickfile = { enabled = true },
             scope = { enabled = true },
-            terminal = { enabled = false },
+            terminal = { enabled = true },
         }
     end,
     keys = {
