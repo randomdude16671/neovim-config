@@ -1,6 +1,9 @@
 return {
     "folke/snacks.nvim",
     lazy = false,
+    dependencies = {
+        "nvim-mini/mini.icons",
+    },
     opts = function()
         return {
             input = {
@@ -55,6 +58,18 @@ return {
             "<C-p>",
             function()
                 require("ghost.picker").file_browser("")
+            end,
+        },
+        {
+            "<leader>sr",
+            function()
+                Snacks.picker.lsp_references()
+            end,
+        },
+        {
+            "<leader>si",
+            function()
+                Snacks.picker.grep_word()
             end,
         },
         {

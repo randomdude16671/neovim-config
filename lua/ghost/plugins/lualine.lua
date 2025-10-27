@@ -4,7 +4,6 @@ return {
     event = "VeryLazy",
     dependencies = {
         "catppuccin/nvim",
-        "nvim-mini/mini.icons",
     },
     config = function()
         vim.o.laststatus = 3 -- works better with globalstatus
