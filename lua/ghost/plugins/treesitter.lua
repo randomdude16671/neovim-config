@@ -16,6 +16,7 @@ return {
                 "markdown",
                 "rust",
                 "typst",
+                "regex",
             },
             highlight = {
                 enable = true,
